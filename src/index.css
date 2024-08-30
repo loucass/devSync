@@ -1,0 +1,273 @@
+/* Whole Document Styling Starts */
+* {
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Allow scrolling but hide scrollbar for "Chrome, Safari, Edge" Strt */
+html,
+body {
+  overflow: auto;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+/* Allow scrolling but hide scrollbar for "Chrome, Safari, Edge" End */
+
+/* Body Section Styling Starts */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #161b22;
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+}
+
+/* Body Section Styling Starts */
+
+/* Navbar Section Styling Starts */
+nav {
+  background-color: #080a0c;
+  background: linear-gradient(135deg, #0f1217 0%, #0d1117 100%);
+}
+
+nav .navbar-toggler {
+  border: none;
+  background-color: black;
+}
+
+/* Navbar Section Styling Ends */
+
+/* UserInfo Section Styling Starts */
+.userInfo-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0d1117;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userInfo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.userInfo-container label {
+  font-size: 18px;
+}
+
+.userInfo-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.userInfo-container button {
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.userInfo-container p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* UserInfo Section Styling Ends */
+
+/* Community Section Styling Starts */
+#community .card .card-body p,
+#community .card .card-body h5,
+#community .card .card-body ul li {
+  color: #000;
+}
+
+/* Community Section Styling Ends */
+
+/* UserDashboard Section Styling Starts */
+#UserDashboard {
+  display: flex;
+  margin: 50px 0;
+}
+
+#UserDashboard #UserProfile {
+  width: 50%;
+  margin-right: 50px;
+  transition: 1s;
+  padding: 20px;
+  margin: 0;
+}
+
+#UserProfile:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0);
+}
+
+#UserDashboard #UserProfile #ProfileEditing img {
+  /* width: 100%; */
+}
+
+/* Profile-settings Section Styling Starts */
+#homepage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile-setting-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-setting-container #profile-setting {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #0d1117;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+/* Profile-settings Section Styling Ends */
+
+#UserDashboard #UserRepos {
+  width: 50%;
+  padding: 20px;
+  transition: 1s;
+  margin: 0;
+}
+
+#UserRepos:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0);
+}
+
+#UserRepos #PinnedRepos .card {
+  color: #fff;
+  background-color: #161b22;
+  border: none;
+}
+
+#UserRepos ul li {
+  padding: 20px;
+  background-color: #161b22;
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+  border: none;
+  transition: 1s;
+}
+
+#UserRepos ul li:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0);
+}
+/* UserDashboard Section Styling Ends */
+
+/* Footer Section Styling Starts */
+footer {
+  background-color: #080a0c;
+  background: linear-gradient(135deg, #0f1217 0%, #0d1117 100%);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* Footer Section Styling Ends */
+/* Whole Document Styling Ends */
+
+/* Media Styling Part Starts */
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .userInfo-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #UserDashboard {
+    display: inline;
+  }
+
+  #UserDashboard #UserProfile {
+    width: 100%;
+    text-align: center;
+  }
+
+  #UserDashboard #UserProfile #ProfileEditing img {
+    /* width: 80%; */
+  }
+
+  #UserDashboard #UserRepos {
+    width: 100%;
+    text-align: center;
+  }
+
+  #UserRepos #PinnedRepos .card {
+    margin: 10px;
+    width: 100%;
+  }
+
+  #UserRepos #edit-repo #add-repo {
+    margin: 10px;
+    width: 100%;
+  }
+
+  #UserRepos ul li {
+    margin: 0 auto;
+  }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .userInfo-container {
+    width: 80%;
+    padding: 25px;
+  }
+
+  #UserDashboard {
+    display: inline;
+  }
+
+  #UserDashboard #UserProfile {
+    width: 100%;
+  }
+
+  #UserDashboard #UserRepos {
+    width: 100%;
+  }
+
+  #UserDashboard #UserProfile #ProfileEditing img {
+    /* width: 80%; */
+  }
+
+  #UserDashboard #UserRepos {
+    width: 100%;
+    text-align: center;
+  }
+
+  #UserRepos ul li {
+    margin: 0 auto;
+  }
+}
+
+/* Media Styling Part Ends */
